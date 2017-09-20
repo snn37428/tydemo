@@ -5,7 +5,7 @@ function addPicture(){
 	$("#img_list_dialog").modal("show");
 		}
 		
-function addPictureOnly(){
+function addPictureOnly(){;
 	isOnly="1";
 	listImage();
 	$("#img_list_dialog").modal("show");

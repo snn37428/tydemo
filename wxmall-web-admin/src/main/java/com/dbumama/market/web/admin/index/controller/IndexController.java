@@ -150,6 +150,7 @@ public class IndexController extends BaseController{
 		SellerUser admin = SellerUser.dao.findFirst("select * from t_seller_user where phone = ?", phone);		
 		// 开始验证
 		Subject subject = SecurityUtils.getSubject();
+		String se = DigestUtils.md5Hex(password);
 		UsernamePasswordToken token = new UsernamePasswordToken(phone, DigestUtils.md5Hex(password));
 		token.setRememberMe(false);
 		

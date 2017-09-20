@@ -120,7 +120,7 @@ public class ProductController extends AdminBaseController<Product> {
 		
 		List<ProductCategory> productCategory = productCategoryService.findRoots();
 		setAttr("productCategory", productCategory);
-		setAttr("specificationResultDto", specificationService.findAll(specificationParamDto));
+		//setAttr("specificationResultDto", specificationService.findAll(specificationParamDto));
 		render("pd_add.html");
 	}
 	
@@ -136,7 +136,7 @@ public class ProductController extends AdminBaseController<Product> {
 			product.setImage(getImageDomain()+product.getImage());
 			if(product != null){
 				
-				setAttr("deliveryTemplate", DeliveryTemplate.dao.findById(product.getDeliveryTemplateId()));	
+				//setAttr("deliveryTemplate", DeliveryTemplate.dao.findById(product.getDeliveryTemplateId()));
 				
 				setAttr("product", product);
 				List<ProductCategory> productCategory = productCategoryService.findRoots();

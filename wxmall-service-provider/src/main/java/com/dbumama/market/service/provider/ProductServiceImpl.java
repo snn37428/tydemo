@@ -94,6 +94,7 @@ public class ProductServiceImpl extends AbstractServiceImpl implements ProductSe
 		}
 		
 		try {
+
 			product.save();
 		} catch (Exception e) {
 			throw new ProductException(e.getMessage());
