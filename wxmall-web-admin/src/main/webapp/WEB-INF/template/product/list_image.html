@@ -185,17 +185,7 @@ ul {
 </head>
 <body>
 <div class="panel-body">
-	[#if imageGroups?? && (imageGroups?size>0)]
-    <div class="category-list-region js-category-list-region">
-        <ul class="category-list">
-        	[#list imageGroups as igroup]
-               	<li class="js-category-item" data-id="${igroup.id}">${igroup.groupName}
-                    <span>(${igroup.imageNum})</span>
-                </li>
-             [/#list]   
-        </ul>
-    </div>
-    [/#if]
+
     <div class="panel-footer" style="height: 50px;">
 	<button id="uploadImagess" type="button" class="btn btn-sm btn-success" style="margin-left:20px;;margin-bottom: 1px;float: left;">上 传 图 片</button>
 		 <div id="pagerImage" class="jqpager" style="margin-bottom: 1px;float: right;"></div>

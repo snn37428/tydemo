@@ -55,8 +55,8 @@ function nextStepTwo1(){
 }
 
 function nextStepTwo(){
-	if(catagory == ''){
-		$("#assign_error_msg").html("必须选择一个商品类目。");
+	if(catagory == '' || catagory ==6){
+		$("#assign_error_msg").html("必须选择商城商品类目，添加商品。");
 		isShowStep1="0";
 		return false;
 	}else{
@@ -755,7 +755,7 @@ function saveTaskForm(){
                              
                              <div class="col-md-5">
                                  <ul class="js-picture-listss app-image-list">
-					                <li><a href="javascript:;" onclick="addPicture(true);" class="add-goods js-add-picture show">+加图</a></li>
+					                <li><a href="javascript:;" onclick="addPicture(true);" class="add-goods js-add-picture show"> ╋ 加图</a></li>
 				                 </ul>
 				                 <label id="only_error_msg" style="color:red;"></label>
 					          </div>
@@ -872,12 +872,21 @@ function saveTaskForm(){
 				 <div class="info-group-cont vbox">
                         <div class="group-inner">
                           <div class="form-group">
-                             <label class="col-md-2 control-label">商品名：<span style="color: red;"><em>*</em></span></label>
+                             <label class="col-md-2 control-label">商品名称：<span style="color: red;"><em>*</em></span></label>
                               <div class="col-md-4" id="error_product_name">
 					                <input type="text" id="product_name"  name="name" value=""  class="form-control"/>
 					                <label class="control-label" for="product_name"></label>
 					          </div>
                           </div>
+
+							<div class="form-group">
+								<label class="col-md-2 control-label">商品描述：<span style="color: red;"><em>*</em></span></label>
+								<div class="col-md-4" id="error_product_name_desc">
+									<input type="text" id="product_name_desc"  name="name" value=""  class="form-control"/>
+									<label class="control-label" for="product_name"></label>
+								</div>
+							</div>
+
                           
                           <div id="unified">
                           <div class="form-group">

@@ -70,7 +70,8 @@ public class ImageGroupController extends  AdminBaseController<ImageGroup>{
 		for(SellerImages sellerImage : pages.getList()){
 			ImagepathResultDto dto=new ImagepathResultDto();
 			dto.setId(sellerImage.getId());
-			dto.setImgPath(getImageDomain() + sellerImage.getImgPath());
+			//dto.setImgPath(getImageDomain() + sellerImage.getImgPath());
+			dto.setImgPath("http://localhost:8080/upload/" + sellerImage.getImgPath());
 			dto.setImgUrl(sellerImage.getImgPath());
 			imagePath.add(dto);
 		}
