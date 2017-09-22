@@ -41,6 +41,14 @@ public abstract class BaseProduct<M extends BaseProduct<M>> extends Model<M> imp
 		return get("name");
 	}
 
+	public void setNameDesc(java.lang.String nameDesc) {
+		set("name_desc", nameDesc);
+	}
+
+	public java.lang.String getNameDesc() {
+		return get("name_desc");
+	}
+
 	public void setPrice(java.lang.String price) {
 		set("price", price);
 	}

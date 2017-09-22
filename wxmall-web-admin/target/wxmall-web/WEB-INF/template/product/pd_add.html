@@ -345,7 +345,7 @@ function saveTask(){
 			itemsAll.push(entity);	 
 	 }); 		 
 	 params.items =  JSON.stringify(itemsAll);
-$("#allStocks").val(params.items);
+	 $("#allStocks").val(params.items);
 }
 $(function (){
 
@@ -882,7 +882,7 @@ function saveTaskForm(){
 							<div class="form-group">
 								<label class="col-md-2 control-label">商品描述：<span style="color: red;"><em>*</em></span></label>
 								<div class="col-md-4" id="error_product_name_desc">
-									<input type="text" id="product_name_desc"  name="name" value=""  class="form-control"/>
+									<input type="text" id="product_name_desc"  name="name_desc" value=""  class="form-control"/>
 									<label class="control-label" for="product_name"></label>
 								</div>
 							</div>
@@ -900,7 +900,7 @@ function saveTaskForm(){
                           
                           <div class="form-group">
                              <label class="col-md-2 control-label">市场价：</label>
-                              <div class="col-md-2" id="error_product_price">
+                              <div class="col-md-2" id="error_product_price_s">
 								 <input type="text" name="market_price" class="form-control" placeholder="市场价：￥99.99" onkeyup="value=value.replace(/[^\d.]/g,'')"/>
 					          </div>
                           </div>

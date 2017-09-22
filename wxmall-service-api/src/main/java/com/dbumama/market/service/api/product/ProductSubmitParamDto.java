@@ -18,6 +18,7 @@ public class ProductSubmitParamDto extends AbstractParamDto{
 	private String marketPrice;
 	private String stock;
 	private String name;
+	private String nameDesc;
 	private String mainImage;
 	private String introduction;
 	private String priceAndStock;			//商品规格对应的价格跟库存
@@ -179,5 +180,12 @@ public class ProductSubmitParamDto extends AbstractParamDto{
 	public void setDeliveryWeight(BigDecimal deliveryWeight) {
 		this.deliveryWeight = deliveryWeight;
 	}
-	
+
+	public String getNameDesc() {
+		return nameDesc;
+	}
+
+	public void setNameDesc(String nameDesc) {
+		this.nameDesc = nameDesc;
+	}
 }

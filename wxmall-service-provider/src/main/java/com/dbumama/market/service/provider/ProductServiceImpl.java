@@ -63,6 +63,7 @@ public class ProductServiceImpl extends AbstractServiceImpl implements ProductSe
 		Product product = new Product();
 		product.setSellerId(productSubmitParamDto.getSellerId());
 		product.setName(productSubmitParamDto.getName());
+		product.setNameDesc(productSubmitParamDto.getNameDesc());
 		product.setImage(productSubmitParamDto.getMainImage());
 		product.setIntroduction(productSubmitParamDto.getIntroduction());
 		product.setProductCategoryId(productSubmitParamDto.getProductCategoryId());

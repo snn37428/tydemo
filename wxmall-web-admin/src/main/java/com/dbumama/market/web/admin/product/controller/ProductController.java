@@ -170,6 +170,7 @@ public class ProductController extends AdminBaseController<Product> {
 		String[] specificationValues = getParaValues("specificationValues");
 		Boolean isMarketable = getParaToBoolean("isMarketable", false);
 		Boolean isUnifiedSpec = getParaToBoolean("is_unified_spec", false);
+		String nameDesc = getPara("name_desc");
 		String price=getPara("price");
 		String stock=getPara("stock");
 		String marketPrice=getPara("market_price");
@@ -192,6 +193,7 @@ public class ProductController extends AdminBaseController<Product> {
 		productParamDto.setIsMarketable(isMarketable);
 		productParamDto.setPriceAndStock(priceAndStock);
 		productParamDto.setPrice(price);
+		productParamDto.setNameDesc(nameDesc);
 		productParamDto.setMarketPrice(marketPrice);
 		productParamDto.setStock(stock);
 		productParamDto.setIsUnifiedSpec(isUnifiedSpec);
